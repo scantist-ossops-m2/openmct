@@ -19,7 +19,7 @@
  this source code distribution or the Licensing information page available
  at runtime from the About dialog for additional information.
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -27,7 +27,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Open MCT</title>
-    <script src="dist/openmct.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -89,7 +88,9 @@
         width: 100px;
       }
     </style>
-    <script defer>
+    <script type="module" defer>
+      import openmct from './dist/openmct.mjs';
+
       const THIRTY_SECONDS = 30 * 1000;
       const ONE_MINUTE = THIRTY_SECONDS * 2;
       const FIVE_MINUTES = ONE_MINUTE * 5;

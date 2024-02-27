@@ -3,7 +3,7 @@
   "version": "4.0.0-next",
   "description": "The Open MCT core platform",
   "type": "module",
-  "module": "dist/openmct.mjs",
+  "module": "./dist/openmct.mjs",
   "exports": {
     "import": "./dist/openmct.mjs"
   },
