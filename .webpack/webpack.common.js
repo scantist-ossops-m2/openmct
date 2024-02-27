@@ -55,8 +55,7 @@ const config = {
     filename: '[name].mjs',
     path: path.resolve(projectRootDir, 'dist'),
     library: {
-      type: 'module',
-      export: 'default'
+      type: 'module'
     },
     publicPath: '',
     hashFunction: 'xxhash64',
