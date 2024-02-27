@@ -3,7 +3,10 @@
   "version": "4.0.0-next",
   "description": "The Open MCT core platform",
   "type": "module",
-  "main": "dist/openmct.js",
+  "module": "dist/openmct.mjs",
+  "exports": {
+    "import": "./dist/openmct.mjs"
+  },
   "devDependencies": {
     "@axe-core/playwright": "4.8.2",
     "@babel/eslint-parser": "7.23.3",

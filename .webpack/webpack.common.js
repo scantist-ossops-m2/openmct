@@ -52,11 +52,12 @@ const config = {
   },
   output: {
     globalObject: 'this',
-    filename: '[name].js',
+    filename: '[name].mjs',
     path: path.resolve(projectRootDir, 'dist'),
-    library: 'openmct',
-    libraryExport: 'default',
-    libraryTarget: 'umd',
+    library: {
+      type: 'module',
+      export: 'default'
+    },
     publicPath: '',
     hashFunction: 'xxhash64',
     clean: true
@@ -179,6 +180,9 @@ const config = {
     // these values
     maxEntrypointSize: 27000000,
     maxAssetSize: 27000000
+  },
+  experiments: {
+    outputModule: true
   }
 };
 
